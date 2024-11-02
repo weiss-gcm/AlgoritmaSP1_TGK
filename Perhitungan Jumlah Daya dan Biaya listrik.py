@@ -1,4 +1,3 @@
-
 #DAYA SAMA TOTAL WAKTU DIGUNAKAN LAMPU
 daya_tv = int(input("Jumlah Penggunaan Daya TV (dalam Watt): "))
 waktu_tv = int(input("Jumlah waktu digunakan TV (jam/hari): "))
@@ -20,7 +19,7 @@ hasil3 = daya_lampu * waktu_lampu
 # DIGUNAKAN UNTUK MENJUMLAKAN KESELURUHAN KWH DARI TIAP BARANG ELEKTRONIK
 hasil = hasil1 + hasil2 + hasil3
 
-#KONVERSI DARI WATT KE KILOWATT
+#KONVERSI DARI WATT KE KILOWATT (kWh)
 kwh = hasil / 1000   
 tv_kwh = hasil1 / 1000
 kipas_kwh = hasil2 / 1000
@@ -47,8 +46,8 @@ print("Apabila dihitung perbulan")
 print(f"Total daya Barang TV per bulan: {tv_kwh * 30:2f} kWh")
 print(f"Total daya Barang Kipas per bulan: {kipas_kwh * 30:2f} kWh")
 print(f"Total daya Barang Lampu per bulan: {lampu_kwh * 30:2f} kWh ")
-print(f"Biaya listrik TV per bulan: Rp {lampu_kwh * 30:2f}")
-print(f"Biaya listrik Kipas per bulan: Rp {lampu_kwh * 30:2f}")
-print(f"Biaya listrik Lampu per bulan: Rp {lampu_kwh * 30:2f}")
+print(f"Biaya listrik TV per bulan: Rp {tv_kwh * 30 * hrg:2f}")
+print(f"Biaya listrik Kipas per bulan: Rp {kipas_kwh * 30 * hrg:2f}")
+print(f"Biaya listrik Lampu per bulan: Rp {lampu_kwh * 30 * hrg:2f}")
 print(f"Harga total penggunaan daya elektronik keseluruhan per bulan: Rp {harga_total_1bulan:.2f}")
 
